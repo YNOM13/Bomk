@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0532592B2387200038ECC5 /* BeetlesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0532582B2387200038ECC5 /* BeetlesMapper.swift */; };
+		CE05325C2B2388080038ECC5 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = CE05325B2B2388080038ECC5 /* ObjectMapper */; };
+		CE2098362B64154600330BA3 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CE2098352B64154600330BA3 /* Nuke */; settings = {ATTRIBUTES = (Required, ); }; };
+		CE20983B2B6434E300330BA3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE20983A2B6434E300330BA3 /* Kingfisher */; };
+		CE3273AF2B20BB1B008379B4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE3273AE2B20BB1B008379B4 /* FirebaseDatabase */; };
+		CE33C4C52B66E6C5003A057F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CE33C4C42B66E6C5003A057F /* Lottie */; };
+		CE33E9F52B3A0F9800304141 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CE33E9F42B3A0F9800304141 /* NukeExtensions */; };
+		CE33E9F72B3A0F9800304141 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = CE33E9F62B3A0F9800304141 /* NukeUI */; };
+		CE41F1902B799DD400C10337 /* beetle-launching.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41F18F2B799DD400C10337 /* beetle-launching.png */; };
+		CE41F1922B799F3100C10337 /* beetle-logo-black.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41F1912B799F3100C10337 /* beetle-logo-black.png */; };
+		CE41F1942B79A07400C10337 /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41F1932B79A07400C10337 /* app-icon.png */; };
+		CE7E98262B850B2400A145BA /* swipe-example.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7E98252B850B2400A145BA /* swipe-example.json */; };
+		CE7E98282B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E98272B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift */; };
+		CE9AF5652B6065EC00F0D3E4 /* BeetlesCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AF5642B6065EC00F0D3E4 /* BeetlesCollectionController.swift */; };
+		CE9AF5672B6066A900F0D3E4 /* BeetleColletionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AF5662B6066A900F0D3E4 /* BeetleColletionCell.swift */; };
+		CE9AF5692B60685200F0D3E4 /* NavigatedBeetlesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AF5682B60685200F0D3E4 /* NavigatedBeetlesInfo.swift */; };
+		CE9FA6632B813B040023DBD0 /* SavedBeetleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */; };
+		CE9FA6652B813CA30023DBD0 /* BeetleTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */; };
+		CE9FA66A2B814AED0023DBD0 /* fetchingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */; };
+		CEBCA9A62B1FD5050048E4FF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEBCA9A52B1FD5050048E4FF /* FirebaseFirestore */; };
+		CEC80B1C2B6997F50068526C /* AboutUsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC80B1B2B6997F50068526C /* AboutUsPageController.swift */; };
+		CEC80B1E2B699CF60068526C /* learn-new.json in Resources */ = {isa = PBXBuildFile; fileRef = CEC80B1D2B699CF60068526C /* learn-new.json */; };
 		CECAE9EC2B14BD240063DFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE9EB2B14BD240063DFD0 /* AppDelegate.swift */; };
 		CECAE9EE2B14BD240063DFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE9ED2B14BD240063DFD0 /* SceneDelegate.swift */; };
-		CECAE9F02B14BD240063DFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAE9EF2B14BD240063DFD0 /* ViewController.swift */; };
 		CECAE9F32B14BD240063DFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECAE9F12B14BD240063DFD0 /* Main.storyboard */; };
 		CECAE9F52B14BD260063DFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECAE9F42B14BD260063DFD0 /* Assets.xcassets */; };
 		CECAE9F82B14BD260063DFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECAE9F62B14BD260063DFD0 /* LaunchScreen.storyboard */; };
 		CECAEA032B14BD260063DFD0 /* BomkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAEA022B14BD260063DFD0 /* BomkTests.swift */; };
 		CECAEA0D2B14BD260063DFD0 /* BomkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAEA0C2B14BD260063DFD0 /* BomkUITests.swift */; };
 		CECAEA0F2B14BD260063DFD0 /* BomkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECAEA0E2B14BD260063DFD0 /* BomkUITestsLaunchTests.swift */; };
+		CECAEA1C2B14BDB00063DFD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CECAEA1B2B14BDB00063DFD0 /* GoogleService-Info.plist */; };
+		CECAEA1F2B14BF3A0063DFD0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CECAEA1E2B14BF3A0063DFD0 /* FirebaseAnalytics */; };
+		CEF9C7A32B7A5624009FD090 /* loading-beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF9C7A22B7A5624009FD090 /* loading-beetle.png */; };
+		CEFB50872B62B6E9000D634A /* InforAboutNewContentTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB50862B62B6E8000D634A /* InforAboutNewContentTabBar.swift */; };
+		CEFDBB5E2B6BDB980067371A /* TitlleNavigatedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDBB5D2B6BDB980067371A /* TitlleNavigatedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +62,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE0532582B2387200038ECC5 /* BeetlesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetlesMapper.swift; sourceTree = "<group>"; };
+		CE41F18F2B799DD400C10337 /* beetle-launching.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beetle-launching.png"; sourceTree = "<group>"; };
+		CE41F1912B799F3100C10337 /* beetle-logo-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beetle-logo-black.png"; sourceTree = "<group>"; };
+		CE41F1932B79A07400C10337 /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon.png"; sourceTree = "<group>"; };
+		CE7E98252B850B2400A145BA /* swipe-example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "swipe-example.json"; sourceTree = "<group>"; };
+		CE7E98272B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatedBeetleViewControllerFromTableVIew.swift; sourceTree = "<group>"; };
+		CE9AF5642B6065EC00F0D3E4 /* BeetlesCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetlesCollectionController.swift; sourceTree = "<group>"; };
+		CE9AF5662B6066A900F0D3E4 /* BeetleColletionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetleColletionCell.swift; sourceTree = "<group>"; };
+		CE9AF5682B60685200F0D3E4 /* NavigatedBeetlesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatedBeetlesInfo.swift; sourceTree = "<group>"; };
+		CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedBeetleController.swift; sourceTree = "<group>"; };
+		CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetleTableVIewCell.swift; sourceTree = "<group>"; };
+		CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchingImage.swift; sourceTree = "<group>"; };
+		CEC80B1B2B6997F50068526C /* AboutUsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPageController.swift; sourceTree = "<group>"; };
+		CEC80B1D2B699CF60068526C /* learn-new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "learn-new.json"; sourceTree = "<group>"; };
 		CECAE9E82B14BD240063DFD0 /* Bomk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bomk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECAE9EB2B14BD240063DFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECAE9ED2B14BD240063DFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CECAE9EF2B14BD240063DFD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECAE9F22B14BD240063DFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CECAE9F42B14BD260063DFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECAE9F72B14BD260063DFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +88,10 @@
 		CECAEA082B14BD260063DFD0 /* BomkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BomkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECAEA0C2B14BD260063DFD0 /* BomkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BomkUITests.swift; sourceTree = "<group>"; };
 		CECAEA0E2B14BD260063DFD0 /* BomkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BomkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CECAEA1B2B14BDB00063DFD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEF9C7A22B7A5624009FD090 /* loading-beetle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading-beetle.png"; sourceTree = "<group>"; };
+		CEFB50862B62B6E8000D634A /* InforAboutNewContentTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforAboutNewContentTabBar.swift; sourceTree = "<group>"; };
+		CEFDBB5D2B6BDB980067371A /* TitlleNavigatedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlleNavigatedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +99,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE05325C2B2388080038ECC5 /* ObjectMapper in Frameworks */,
+				CE33E9F72B3A0F9800304141 /* NukeUI in Frameworks */,
+				CE33C4C52B66E6C5003A057F /* Lottie in Frameworks */,
+				CE2098362B64154600330BA3 /* Nuke in Frameworks */,
+				CE3273AF2B20BB1B008379B4 /* FirebaseDatabase in Frameworks */,
+				CE20983B2B6434E300330BA3 /* Kingfisher in Frameworks */,
+				CECAEA1F2B14BF3A0063DFD0 /* FirebaseAnalytics in Frameworks */,
+				CEBCA9A62B1FD5050048E4FF /* FirebaseFirestore in Frameworks */,
+				CE33E9F52B3A0F9800304141 /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +128,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1D890E2B8544170002E914 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		CE436ED92B7EB0AF0025D89E /* images  */ = {
+			isa = PBXGroup;
+			children = (
+				CE41F18F2B799DD400C10337 /* beetle-launching.png */,
+				CE41F1932B79A07400C10337 /* app-icon.png */,
+				CEF9C7A22B7A5624009FD090 /* loading-beetle.png */,
+				CE41F1912B799F3100C10337 /* beetle-logo-black.png */,
+			);
+			path = "images ";
+			sourceTree = "<group>";
+		};
+		CE436EDA2B7EB1100025D89E /* collections */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AF5662B6066A900F0D3E4 /* BeetleColletionCell.swift */,
+				CE9AF5642B6065EC00F0D3E4 /* BeetlesCollectionController.swift */,
+			);
+			path = collections;
+			sourceTree = "<group>";
+		};
+		CE436EDB2B7EB24B0025D89E /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E98252B850B2400A145BA /* swipe-example.json */,
+				CEC80B1D2B699CF60068526C /* learn-new.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		CE436EDC2B7EB3430025D89E /* mapping */ = {
+			isa = PBXGroup;
+			children = (
+				CE0532582B2387200038ECC5 /* BeetlesMapper.swift */,
+			);
+			path = mapping;
+			sourceTree = "<group>";
+		};
+		CE436EDD2B7EB35C0025D89E /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CECAE9F62B14BD260063DFD0 /* LaunchScreen.storyboard */,
+				CECAE9F12B14BD240063DFD0 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		CE436EDE2B7EB47F0025D89E /* navigatedControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E98272B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift */,
+				CEC80B1B2B6997F50068526C /* AboutUsPageController.swift */,
+				CE9AF5682B60685200F0D3E4 /* NavigatedBeetlesInfo.swift */,
+			);
+			path = navigatedControllers;
+			sourceTree = "<group>";
+		};
+		CE436EDF2B7EB4A00025D89E /* other */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB50862B62B6E8000D634A /* InforAboutNewContentTabBar.swift */,
+				CECAE9EB2B14BD240063DFD0 /* AppDelegate.swift */,
+				CECAE9ED2B14BD240063DFD0 /* SceneDelegate.swift */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		CE436EE02B7EB4B30025D89E /* abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */,
+				CEFDBB5D2B6BDB980067371A /* TitlleNavigatedItem.swift */,
+			);
+			path = abstractions;
+			sourceTree = "<group>";
+		};
+		CE7E98242B85067D00A145BA /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */,
+				CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		CEBCA9A42B1FD5050048E4FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CECAE9DF2B14BD240063DFD0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +233,7 @@
 				CECAEA012B14BD260063DFD0 /* BomkTests */,
 				CECAEA0B2B14BD260063DFD0 /* BomkUITests */,
 				CECAE9E92B14BD240063DFD0 /* Products */,
+				CEBCA9A42B1FD5050048E4FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +250,19 @@
 		CECAE9EA2B14BD240063DFD0 /* Bomk */ = {
 			isa = PBXGroup;
 			children = (
-				CECAE9EB2B14BD240063DFD0 /* AppDelegate.swift */,
-				CECAE9ED2B14BD240063DFD0 /* SceneDelegate.swift */,
-				CECAE9EF2B14BD240063DFD0 /* ViewController.swift */,
-				CECAE9F12B14BD240063DFD0 /* Main.storyboard */,
+				CE1D890E2B8544170002E914 /* auth */,
+				CE7E98242B85067D00A145BA /* tables */,
+				CE436EE02B7EB4B30025D89E /* abstractions */,
+				CE436EDF2B7EB4A00025D89E /* other */,
+				CE436EDE2B7EB47F0025D89E /* navigatedControllers */,
+				CE436EDD2B7EB35C0025D89E /* storyboards */,
+				CE436EDC2B7EB3430025D89E /* mapping */,
+				CE436EDB2B7EB24B0025D89E /* animations */,
+				CE436EDA2B7EB1100025D89E /* collections */,
+				CE436ED92B7EB0AF0025D89E /* images  */,
 				CECAE9F42B14BD260063DFD0 /* Assets.xcassets */,
-				CECAE9F62B14BD260063DFD0 /* LaunchScreen.storyboard */,
 				CECAE9F92B14BD260063DFD0 /* Info.plist */,
+				CECAEA1B2B14BDB00063DFD0 /* GoogleService-Info.plist */,
 			);
 			path = Bomk;
 			sourceTree = "<group>";
@@ -143,6 +300,17 @@
 			dependencies = (
 			);
 			name = Bomk;
+			packageProductDependencies = (
+				CECAEA1E2B14BF3A0063DFD0 /* FirebaseAnalytics */,
+				CEBCA9A52B1FD5050048E4FF /* FirebaseFirestore */,
+				CE3273AE2B20BB1B008379B4 /* FirebaseDatabase */,
+				CE05325B2B2388080038ECC5 /* ObjectMapper */,
+				CE33E9F42B3A0F9800304141 /* NukeExtensions */,
+				CE33E9F62B3A0F9800304141 /* NukeUI */,
+				CE2098352B64154600330BA3 /* Nuke */,
+				CE20983A2B6434E300330BA3 /* Kingfisher */,
+				CE33C4C42B66E6C5003A057F /* Lottie */,
+			);
 			productName = Bomk;
 			productReference = CECAE9E82B14BD240063DFD0 /* Bomk.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +383,14 @@
 				Base,
 			);
 			mainGroup = CECAE9DF2B14BD240063DFD0;
+			packageReferences = (
+				CECAEA1D2B14BF3A0063DFD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CEEC456F2B1625B800F768F8 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				CE05325A2B2388080038ECC5 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				CE33E9F12B3A0F9800304141 /* XCRemoteSwiftPackageReference "Nuke" */,
+				CE2098392B6434E300330BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CE33C4C32B66E6C5003A057F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = CECAE9E92B14BD240063DFD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +407,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF9C7A32B7A5624009FD090 /* loading-beetle.png in Resources */,
+				CE41F1902B799DD400C10337 /* beetle-launching.png in Resources */,
 				CECAE9F82B14BD260063DFD0 /* LaunchScreen.storyboard in Resources */,
+				CE7E98262B850B2400A145BA /* swipe-example.json in Resources */,
+				CE41F1922B799F3100C10337 /* beetle-logo-black.png in Resources */,
+				CE41F1942B79A07400C10337 /* app-icon.png in Resources */,
+				CECAEA1C2B14BDB00063DFD0 /* GoogleService-Info.plist in Resources */,
 				CECAE9F52B14BD260063DFD0 /* Assets.xcassets in Resources */,
 				CECAE9F32B14BD240063DFD0 /* Main.storyboard in Resources */,
+				CEC80B1E2B699CF60068526C /* learn-new.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +441,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECAE9F02B14BD240063DFD0 /* ViewController.swift in Sources */,
+				CE7E98282B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift in Sources */,
 				CECAE9EC2B14BD240063DFD0 /* AppDelegate.swift in Sources */,
 				CECAE9EE2B14BD240063DFD0 /* SceneDelegate.swift in Sources */,
+				CE9FA6632B813B040023DBD0 /* SavedBeetleController.swift in Sources */,
+				CEC80B1C2B6997F50068526C /* AboutUsPageController.swift in Sources */,
+				CE9AF5652B6065EC00F0D3E4 /* BeetlesCollectionController.swift in Sources */,
+				CE9FA66A2B814AED0023DBD0 /* fetchingImage.swift in Sources */,
+				CEFDBB5E2B6BDB980067371A /* TitlleNavigatedItem.swift in Sources */,
+				CE9AF5672B6066A900F0D3E4 /* BeetleColletionCell.swift in Sources */,
+				CE9AF5692B60685200F0D3E4 /* NavigatedBeetlesInfo.swift in Sources */,
+				CE0532592B2387200038ECC5 /* BeetlesMapper.swift in Sources */,
+				CE9FA6652B813CA30023DBD0 /* BeetleTableVIewCell.swift in Sources */,
+				CEFB50872B62B6E9000D634A /* InforAboutNewContentTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,8 +641,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,9 +651,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yaroslav.Bomk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,8 +673,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,9 +683,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Yaroslav.Bomk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -607,6 +808,105 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE05325A2B2388080038ECC5 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		CE2098392B6434E300330BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+		CE33C4C32B66E6C5003A057F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+		CE33E9F12B3A0F9800304141 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+		CECAEA1D2B14BF3A0063DFD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+		CEEC456F2B1625B800F768F8 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE05325B2B2388080038ECC5 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE05325A2B2388080038ECC5 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		CE2098352B64154600330BA3 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE33E9F12B3A0F9800304141 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		CE20983A2B6434E300330BA3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2098392B6434E300330BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		CE3273AE2B20BB1B008379B4 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECAEA1D2B14BF3A0063DFD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		CE33C4C42B66E6C5003A057F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE33C4C32B66E6C5003A057F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		CE33E9F42B3A0F9800304141 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE33E9F12B3A0F9800304141 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		CE33E9F62B3A0F9800304141 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE33E9F12B3A0F9800304141 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		CEBCA9A52B1FD5050048E4FF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECAEA1D2B14BF3A0063DFD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CECAEA1E2B14BF3A0063DFD0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECAEA1D2B14BF3A0063DFD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CECAE9E02B14BD240063DFD0 /* Project object */;
 }
