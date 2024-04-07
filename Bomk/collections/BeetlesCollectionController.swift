@@ -2,7 +2,13 @@ import UIKit
 import FirebaseFirestore
 import ObjectMapper
 
-class BeetlesCollectionController: UICollectionViewController, UISearchResultsUpdating {
+
+
+class BeetlesCollectionController: UICollectionViewController, UISearchResultsUpdating, BeetleCellDelegate {
+    func didUpdateBeetleData() {
+        fetchDataFromFirestore()
+
+    }
 
     var arrayOfBeetles: Array<Beetle> = []
     var filteredBeetles: Array<Beetle> = []
@@ -46,7 +52,7 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
         super.viewDidLoad()
     
         searchBar()
-        
+        fetchDataFromFirestore()
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
@@ -55,7 +61,10 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
         
          
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchDataFromFirestore()
+    }
     
     @IBOutlet var myCollectionView: UICollectionView!
     
@@ -73,7 +82,7 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
 
                             if let beetle = Mapper<Beetle>().map(JSON: data) {
                                 beetle.isSaved = data["isSaved"] as? Bool
-                                beetle.documentID = document.documentID // Assuming you have a property for the document ID in your Beetle model
+                                beetle.documentID = document.documentID 
                                 self.arrayOfBeetles.append(beetle)
                             }
                         }
@@ -96,8 +105,9 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
         }
 
         let beetle = searchController.isActive ? filteredBeetles[indexPath.row] : arrayOfBeetles[indexPath.row]
+        beetleCell.delegate = self  
         beetleCell.configure(with: beetle)
-        
+
         return beetleCell
     }
 

@@ -4,6 +4,10 @@ import Kingfisher
 import Firebase
 import FirebaseFirestore
 
+protocol BeetleCellDelegate: AnyObject {
+    func didUpdateBeetleData()
+}
+
 
 class BeetleColletionCell: UICollectionViewCell {
     
@@ -20,8 +24,7 @@ class BeetleColletionCell: UICollectionViewCell {
     
     @IBOutlet weak var savedButton: UIButton!
     @IBAction func savedButtonTapped(_ sender: Any) {
-        guard let beetle = self.beetle
-        else {
+        guard let beetle = self.beetle else {
             return
         }
         
@@ -38,6 +41,8 @@ class BeetleColletionCell: UICollectionViewCell {
         savedButton.setImage(saveButtonTitle, for: .normal)
         
     }
+    weak var delegate: BeetleCellDelegate?
+
     func updateFirestoreDocument(for beetle: Beetle) {
         let db = Firestore.firestore()
         let documentReference = db.collection("beetles").document(beetle.documentID ?? "")
@@ -47,6 +52,8 @@ class BeetleColletionCell: UICollectionViewCell {
                 print("Error updating document: \(error.localizedDescription)")
             } else {
                 print("Document successfully updated!")
+                
+                self.delegate?.didUpdateBeetleData()
             }
         }
     }

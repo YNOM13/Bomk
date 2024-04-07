@@ -29,7 +29,8 @@ class NavigatedBeetlesInfo: UIViewController {
     }
     
     func updateBeetlePage() {
-        nameLabel.text = name.isEmpty ? "Name is not available" : name
+        
+       
         factBeetle.text = fact.isEmpty ? "Fact is not available" : fact
         storyBeetle.text = story.isEmpty ? "Fact is not available" : story
         imageView.layer.cornerRadius = 50
@@ -37,8 +38,8 @@ class NavigatedBeetlesInfo: UIViewController {
         
         fetchingImage(imageView: imageView, beetleImage: image)
         
-        selfSizeTheTextView(with: factBeetle)
-        selfSizeTheTextView(with: storyBeetle)
+//        selfSizeTheTextView(with: factBeetle)
+//        selfSizeTheTextView(with: storyBeetle)
     }
     
     func selfSizeTheTextView(with arg:UITextView){
