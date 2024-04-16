@@ -58,12 +58,13 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
         
         let layout = self.collectionViewLayout as! UICollectionViewFlowLayout
         layout.sectionInset = UIEdgeInsets(top: 10,left: 10,bottom: 15,right: 10)
-        
+        collectionView.reloadData()
          
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchDataFromFirestore()
+        collectionView.reloadData()
     }
     
     @IBOutlet var myCollectionView: UICollectionView!
@@ -127,6 +128,9 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
             vc.fact = selectedBeetle.fact ?? "None"
             vc.story = selectedBeetle.story ?? "None"
             vc.spread = selectedBeetle.spread ?? "No info"
+            vc.discovererDescription = selectedBeetle.discovererDescription ?? "No info"
+            vc.discovererPhoto = selectedBeetle.discovererPhoto ?? "No info"
+            vc.discovererName = selectedBeetle.discovererName ?? "No info"
             navigationController?.pushViewController(vc, animated: true)
         }
     }

@@ -11,6 +11,9 @@
 		CE05325C2B2388080038ECC5 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = CE05325B2B2388080038ECC5 /* ObjectMapper */; };
 		CE2098362B64154600330BA3 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CE2098352B64154600330BA3 /* Nuke */; settings = {ATTRIBUTES = (Required, ); }; };
 		CE20983B2B6434E300330BA3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE20983A2B6434E300330BA3 /* Kingfisher */; };
+		CE31D5FF2BC2DAA300DB8659 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D5FE2BC2DAA300DB8659 /* LogInController.swift */; };
+		CE31D6012BC2DDE400DB8659 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE31D6002BC2DDE400DB8659 /* FirebaseAuth */; };
+		CE31D6042BC2EC4100DB8659 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31D6032BC2EC4100DB8659 /* ProfileController.swift */; };
 		CE3273AF2B20BB1B008379B4 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE3273AE2B20BB1B008379B4 /* FirebaseDatabase */; };
 		CE33C4C52B66E6C5003A057F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CE33C4C42B66E6C5003A057F /* Lottie */; };
 		CE33E9F52B3A0F9800304141 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CE33E9F42B3A0F9800304141 /* NukeExtensions */; };
@@ -18,6 +21,7 @@
 		CE41F1902B799DD400C10337 /* beetle-launching.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41F18F2B799DD400C10337 /* beetle-launching.png */; };
 		CE41F1922B799F3100C10337 /* beetle-logo-black.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41F1912B799F3100C10337 /* beetle-logo-black.png */; };
 		CE41F1942B79A07400C10337 /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE41F1932B79A07400C10337 /* app-icon.png */; };
+		CE7230F12BCF1C10000DC255 /* InfoHowToSaveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7230F02BCF1C10000DC255 /* InfoHowToSaveController.swift */; };
 		CE7E98262B850B2400A145BA /* swipe-example.json in Resources */ = {isa = PBXBuildFile; fileRef = CE7E98252B850B2400A145BA /* swipe-example.json */; };
 		CE7E98282B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E98272B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift */; };
 		CE91AAF92BA789EA007A11A9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91AAF82BA789EA007A11A9 /* PageViewController.swift */; };
@@ -30,6 +34,7 @@
 		CE9FA6632B813B040023DBD0 /* SavedBeetleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */; };
 		CE9FA6652B813CA30023DBD0 /* BeetleTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */; };
 		CE9FA66A2B814AED0023DBD0 /* fetchingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */; };
+		CEB8EA6F2BCC5CE200178CE9 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8EA6E2BCC5CE100178CE9 /* DiscoverController.swift */; };
 		CEBCA9A62B1FD5050048E4FF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEBCA9A52B1FD5050048E4FF /* FirebaseFirestore */; };
 		CEBE556E2BB9ABA700FAC922 /* ViewAnimator in Frameworks */ = {isa = PBXBuildFile; productRef = CEBE556D2BB9ABA700FAC922 /* ViewAnimator */; };
 		CEBE55712BB9B4A300FAC922 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE55702BB9B4A300FAC922 /* RegistrationController.swift */; };
@@ -69,9 +74,12 @@
 
 /* Begin PBXFileReference section */
 		CE0532582B2387200038ECC5 /* BeetlesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetlesMapper.swift; sourceTree = "<group>"; };
+		CE31D5FE2BC2DAA300DB8659 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		CE31D6032BC2EC4100DB8659 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		CE41F18F2B799DD400C10337 /* beetle-launching.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beetle-launching.png"; sourceTree = "<group>"; };
 		CE41F1912B799F3100C10337 /* beetle-logo-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beetle-logo-black.png"; sourceTree = "<group>"; };
 		CE41F1932B79A07400C10337 /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon.png"; sourceTree = "<group>"; };
+		CE7230F02BCF1C10000DC255 /* InfoHowToSaveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHowToSaveController.swift; sourceTree = "<group>"; };
 		CE7E98252B850B2400A145BA /* swipe-example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "swipe-example.json"; sourceTree = "<group>"; };
 		CE7E98272B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatedBeetleViewControllerFromTableVIew.swift; sourceTree = "<group>"; };
 		CE91AAF82BA789EA007A11A9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 		CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedBeetleController.swift; sourceTree = "<group>"; };
 		CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetleTableVIewCell.swift; sourceTree = "<group>"; };
 		CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchingImage.swift; sourceTree = "<group>"; };
+		CEB8EA6E2BCC5CE100178CE9 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		CEBE55702BB9B4A300FAC922 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		CEC80B1B2B6997F50068526C /* AboutUsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPageController.swift; sourceTree = "<group>"; };
 		CEC80B1D2B699CF60068526C /* learn-new.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "learn-new.json"; sourceTree = "<group>"; };
@@ -117,6 +126,7 @@
 				CEBE556E2BB9ABA700FAC922 /* ViewAnimator in Frameworks */,
 				CE3273AF2B20BB1B008379B4 /* FirebaseDatabase in Frameworks */,
 				CE20983B2B6434E300330BA3 /* Kingfisher in Frameworks */,
+				CE31D6012BC2DDE400DB8659 /* FirebaseAuth in Frameworks */,
 				CECAEA1F2B14BF3A0063DFD0 /* FirebaseAnalytics in Frameworks */,
 				CEBCA9A62B1FD5050048E4FF /* FirebaseFirestore in Frameworks */,
 				CE33E9F52B3A0F9800304141 /* NukeExtensions in Frameworks */,
@@ -145,6 +155,14 @@
 			children = (
 			);
 			path = auth;
+			sourceTree = "<group>";
+		};
+		CE31D6022BC2EC3100DB8659 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				CE31D6032BC2EC4100DB8659 /* ProfileController.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 		CE436ED92B7EB0AF0025D89E /* images  */ = {
@@ -199,6 +217,8 @@
 				CE7E98272B851DA000A145BA /* NavigatedBeetleViewControllerFromTableVIew.swift */,
 				CEC80B1B2B6997F50068526C /* AboutUsPageController.swift */,
 				CE9AF5682B60685200F0D3E4 /* NavigatedBeetlesInfo.swift */,
+				CEB8EA6E2BCC5CE100178CE9 /* DiscoverController.swift */,
+				CE7230F02BCF1C10000DC255 /* InfoHowToSaveController.swift */,
 			);
 			path = navigatedControllers;
 			sourceTree = "<group>";
@@ -261,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBE55702BB9B4A300FAC922 /* RegistrationController.swift */,
+				CE31D5FE2BC2DAA300DB8659 /* LogInController.swift */,
 			);
 			path = registration;
 			sourceTree = "<group>";
@@ -289,6 +310,7 @@
 		CECAE9EA2B14BD240063DFD0 /* Bomk */ = {
 			isa = PBXGroup;
 			children = (
+				CE31D6022BC2EC3100DB8659 /* profile */,
 				CEBE556F2BB9B48B00FAC922 /* registration */,
 				CE91AAF72BA789D7007A11A9 /* swiper */,
 				CE1D890E2B8544170002E914 /* auth */,
@@ -352,6 +374,7 @@
 				CE20983A2B6434E300330BA3 /* Kingfisher */,
 				CE33C4C42B66E6C5003A057F /* Lottie */,
 				CEBE556D2BB9ABA700FAC922 /* ViewAnimator */,
+				CE31D6002BC2DDE400DB8659 /* FirebaseAuth */,
 			);
 			productName = Bomk;
 			productReference = CECAE9E82B14BD240063DFD0 /* Bomk.app */;
@@ -492,12 +515,16 @@
 				CE9FA6632B813B040023DBD0 /* SavedBeetleController.swift in Sources */,
 				CEC80B1C2B6997F50068526C /* AboutUsPageController.swift in Sources */,
 				CE9AF5652B6065EC00F0D3E4 /* BeetlesCollectionController.swift in Sources */,
+				CEB8EA6F2BCC5CE200178CE9 /* DiscoverController.swift in Sources */,
 				CE91AAFE2BA78A6B007A11A9 /* InfoScreen.swift in Sources */,
 				CE9FA66A2B814AED0023DBD0 /* fetchingImage.swift in Sources */,
 				CEBE55712BB9B4A300FAC922 /* RegistrationController.swift in Sources */,
 				CEFDBB5E2B6BDB980067371A /* TitlleNavigatedItem.swift in Sources */,
 				CE9AF5672B6066A900F0D3E4 /* BeetleColletionCell.swift in Sources */,
 				CE9AF5692B60685200F0D3E4 /* NavigatedBeetlesInfo.swift in Sources */,
+				CE31D5FF2BC2DAA300DB8659 /* LogInController.swift in Sources */,
+				CE7230F12BCF1C10000DC255 /* InfoHowToSaveController.swift in Sources */,
+				CE31D6042BC2EC4100DB8659 /* ProfileController.swift in Sources */,
 				CE91AAFC2BA78A24007A11A9 /* FirstPage.swift in Sources */,
 				CE0532592B2387200038ECC5 /* BeetlesMapper.swift in Sources */,
 				CE9FA6652B813CA30023DBD0 /* BeetleTableVIewCell.swift in Sources */,
@@ -931,6 +958,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE2098392B6434E300330BA3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		CE31D6002BC2DDE400DB8659 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECAEA1D2B14BF3A0063DFD0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 		CE3273AE2B20BB1B008379B4 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;

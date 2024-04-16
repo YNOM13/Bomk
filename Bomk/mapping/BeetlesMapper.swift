@@ -12,7 +12,9 @@ class Beetle: Mappable {
     var rating: Float?
     var isSaved: Bool?
     var documentID: String?
-
+    var discovererName: String?
+    var discovererPhoto: String?
+    var discovererDescription: String?
     required init?(map: Map) {
 
     }
@@ -28,5 +30,9 @@ class Beetle: Mappable {
         fact <- map["fact"]
         rating <- map["rating"]
         isSaved <- map["isSaved"]
+        discovererName <- map["discovererName"]
+        discovererPhoto <- map["discovererPhoto"]
+        discovererDescription <- map["discovererDescription"]
     }
 }
+

@@ -8,8 +8,8 @@ class SavedBeetleController: UIViewController, BeetleCellDelegate {
 
     @IBOutlet weak var savedBeetlesTableView: UITableView!
    
-    var arrayOfBeetles: [Beetle] = []
-       var sortedArrayOfBeetles: [Beetle] = []
+    var arrayOfBeetles: Array<Beetle> = []
+       var sortedArrayOfBeetles: Array<Beetle> = []
        let animator = UIViewPropertyAnimator(duration: 0.5, curve: .easeInOut)
        
        func isElementSaved() {
@@ -142,8 +142,18 @@ extension SavedBeetleController: UITableViewDelegate {
                return UISwipeActionsConfiguration(actions: [actionDeleteSavedBeetle])
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(identifier: "NavigatedBeetleViewControllerFromTableVIew") as? NavigatedBeetleViewControllerFromTableVIew {
-//            vc.name = arr.name ?? "No name"
+        let arrayOfBeetles = sortedArrayOfBeetles[indexPath.row]
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "NavigatedBeetlesInfo") as? NavigatedBeetlesInfo {
+            vc.name = arrayOfBeetles.name ?? "None"
+            vc.image = arrayOfBeetles.image ?? ""
+            vc.fact = arrayOfBeetles.fact ?? "None"
+            vc.story = arrayOfBeetles.story ?? "None"
+            vc.spread = arrayOfBeetles.spread ?? "No info"
+            
+            vc.discovererDescription = arrayOfBeetles.discovererDescription ?? ""
+            vc.discovererPhoto = arrayOfBeetles.discovererPhoto ?? ""
+            vc.discovererName = arrayOfBeetles.discovererName ?? ""
             navigationController?.pushViewController(vc, animated: true)
         }
     }
