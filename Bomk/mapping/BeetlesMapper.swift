@@ -36,3 +36,18 @@ class Beetle: Mappable {
     }
 }
 
+class SaveBeetles: Mappable{
+    var name: String?
+    var text: String?
+    var documentID: String?
+    
+    required init?(map: Map) {
+
+    }
+    
+    func mapping(map: Map) {
+        documentID <- map["documentID"]
+        name <- map["name"]
+        text <- map["text"]
+    }
+}

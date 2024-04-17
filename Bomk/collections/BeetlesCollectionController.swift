@@ -128,9 +128,9 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
             vc.fact = selectedBeetle.fact ?? "None"
             vc.story = selectedBeetle.story ?? "None"
             vc.spread = selectedBeetle.spread ?? "No info"
-            vc.discovererDescription = selectedBeetle.discovererDescription ?? "No info"
-            vc.discovererPhoto = selectedBeetle.discovererPhoto ?? "No info"
-            vc.discovererName = selectedBeetle.discovererName ?? "No info"
+            vc.discovererDescription = selectedBeetle.discovererDescription ?? ""
+            vc.discovererPhoto = selectedBeetle.discovererPhoto ?? ""
+            vc.discovererName = selectedBeetle.discovererName ?? ""
             navigationController?.pushViewController(vc, animated: true)
         }
     }
