@@ -1,7 +1,7 @@
 import UIKit
 
 class BeetleTableVIewCell: UITableViewCell {
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
        

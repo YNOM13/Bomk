@@ -51,3 +51,19 @@ class SaveBeetles: Mappable{
         text <- map["text"]
     }
 }
+
+class RareBeetles: Mappable{
+    var name: String?
+    var image: String?
+    var documentID: String?
+
+    required init?(map: Map) {
+
+    }
+    
+    func mapping(map: Map) {
+        documentID <- map["documentID"]
+        name <- map["name"]
+        image <- map["image"]
+    }
+}

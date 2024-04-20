@@ -72,27 +72,29 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
     func fetchDataFromFirestore() {
         let db = Firestore.firestore()
 
-            db.collection("beetles").getDocuments { (snapshot, error) in
-                if let error = error {
-                    print("Error fetching data: \(error.localizedDescription)")
-                } else {
-                    if let documents = snapshot?.documents {
-                        for document in documents {
-                            let data = document.data()
-                            print(document.data())
+        db.collection("beetles").getDocuments { (snapshot, error) in
+            if let error = error {
+                print("Error fetching data: \(error.localizedDescription)")
+            } else {
+                self.arrayOfBeetles.removeAll()
 
-                            if let beetle = Mapper<Beetle>().map(JSON: data) {
-                                beetle.isSaved = data["isSaved"] as? Bool
-                                beetle.documentID = document.documentID 
-                                self.arrayOfBeetles.append(beetle)
-                            }
+                if let documents = snapshot?.documents {
+                    for document in documents {
+                        let data = document.data()
+                        print(document.data())
+
+                        if let beetle = Mapper<Beetle>().map(JSON: data) {
+                            beetle.isSaved = data["isSaved"] as? Bool
+                            beetle.documentID = document.documentID
+                            self.arrayOfBeetles.append(beetle)
                         }
-                        self.myCollectionView.reloadData()
-                    } else {
-                        print("No documents found.")
                     }
+                    self.myCollectionView.reloadData()
+                } else {
+                    print("No documents found.")
                 }
             }
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
