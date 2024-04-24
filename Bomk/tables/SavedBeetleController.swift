@@ -89,13 +89,7 @@ extension SavedBeetleController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BeetleTableVIewCell", for: indexPath) as! BeetleTableVIewCell
-        let arrowImage = UIImage(systemName: "chevron.right")?.withTintColor(UIColor.gray, renderingMode: .alwaysOriginal)
-            let arrowImageView = UIImageView(image: arrowImage)
-
-            arrowImageView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-            arrowImageView.isOpaque = false
      
-            cell.accessoryView = arrowImageView
         cell.configure(with: sortedArrayOfBeetles[indexPath.row])
         return cell
     }
