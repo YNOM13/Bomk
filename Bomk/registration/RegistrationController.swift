@@ -7,7 +7,6 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseCore
 import Firebase
 
 class RegistrationController: UIViewController {
@@ -20,7 +19,7 @@ class RegistrationController: UIViewController {
     @IBOutlet weak var doYouHaveAnAccountLabel: UILabel!
     @IBOutlet weak var LogInButton: UIButton!
     
-    var signUp: Bool = true{
+    var signUp: Bool = true {
         willSet{
             if newValue{
                 descriptionLabel.text = "Будь ласка, введіть свою інформацію, щоб створити обліковий запис"
@@ -90,7 +89,7 @@ class RegistrationController: UIViewController {
                 showAlert(message: "Всі поля повинні бути заповнені")
                 return
             }
-            
+        
             if signUp {
                 Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                     if let error = error {

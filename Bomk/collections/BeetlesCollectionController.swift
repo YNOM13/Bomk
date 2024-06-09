@@ -5,9 +5,9 @@ import ObjectMapper
 
 
 class BeetlesCollectionController: UICollectionViewController, UISearchResultsUpdating, BeetleCellDelegate {
+  
     func didUpdateBeetleData() {
         fetchDataFromFirestore()
-
     }
 
     var arrayOfBeetles: Array<Beetle> = []
@@ -27,7 +27,6 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
     }
     
     func searchBar () {
-        //read about it more again
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
@@ -45,8 +44,7 @@ class BeetlesCollectionController: UICollectionViewController, UISearchResultsUp
         fetchDataFromFirestore()
         
         titleBomk(with: navigationItem)
-    } 
-  
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

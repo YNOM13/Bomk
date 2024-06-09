@@ -13,12 +13,12 @@ import Kingfisher
 import RealmSwift
 
 class User: Object {
-    @objc dynamic var uid: String = ""
-    @objc dynamic var profileImage: Data?
-    
-    override static func primaryKey() -> String? {
-        return "uid"
-    }
+  @objc dynamic var uid: String = ""
+  @objc dynamic var profileImage: Data?
+
+  override static func primaryKey() -> String? {
+    return "uid"
+  }
 }
 
 class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
@@ -27,15 +27,16 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
-    override func  viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         titleBomk(with: navigationItem)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        loadProfileImageFromLocal()
+      }
+
+      override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         fetchUserProfile()
-    }
+      }
     
     @IBAction func openSettingsAction(_ sender: Any) {
         if let myVC = UIStoryboard (name: "Main", bundle: nil).instantiateViewController(withIdentifier:"profileSettings") as? ProfileSettingsController {
@@ -71,39 +72,52 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
-            accountImage.image = pickedImage
-            
-            saveImageToLocalDatabase(image: pickedImage)
+          accountImage.image = pickedImage
+          saveImageToLocalDatabase(image: pickedImage)
         }
-        
+
         dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-           dismiss(animated: true, completion: nil)
-       }
+      }
+
+      func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+      }
     
     private func saveImageToLocalDatabase(image: UIImage) {
+       do {
+         let realm = try Realm()
+         try realm.write {
+           if let user = Auth.auth().currentUser {
+             let imageData = image.jpegData(compressionQuality: 0.5)
+
+             if let currentUser = realm.objects(User.self).filter("uid == %@", user.uid).first {
+               currentUser.profileImage = imageData
+             } else {
+               let newUser = User()
+               newUser.uid = user.uid
+               newUser.profileImage = imageData
+               realm.add(newUser)
+             }
+           }
+         }
+       } catch {
+         print("Error saving image to local database: \(error.localizedDescription)")
+       }
+     }
+
+    private func loadProfileImageFromLocal() {
         do {
-            let realm = try Realm()
-            try realm.write {
-                if let user = Auth.auth().currentUser {
-                    let imageData = image.jpegData(compressionQuality: 0.5)
-                    
-                    if let currentUser = realm.objects(User.self).filter("uid == %@", user.uid).first {
-                        currentUser.profileImage = imageData
-                    } else {
-                        let newUser = User()
-                        newUser.uid = user.uid
-                        newUser.profileImage = imageData
-                        realm.add(newUser)
-                    }
-                }
-            }
+          let realm = try Realm()
+          if let user = Auth.auth().currentUser,
+             let currentUser = realm.objects(User.self).filter("uid == %@", user.uid).first,
+             let imageData = currentUser.profileImage {
+            accountImage.image = UIImage(data: imageData)
+          }
         } catch {
-            print("Error saving image to local database: \(error.localizedDescription)")
+          print("Error loading image from local database: \(error.localizedDescription)")
         }
-    }
+      }
+
     
     @IBAction func changeImage(_ sender: Any) {
         let imagePickerController = UIImagePickerController()

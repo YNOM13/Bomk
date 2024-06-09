@@ -33,7 +33,6 @@ class NavigatedBeetlesInfo: UIViewController {
     }
     @IBAction func discovererAction(_ sender: Any) {
         if let myVC = UIStoryboard (name: "Main", bundle: nil).instantiateViewController(withIdentifier:"discover") as? DiscoverController {
-//            myVC.discoverer = discoverer
             myVC.discovererName = discovererName
             myVC.discovererPhoto = discovererPhoto
             myVC.discovererDescription = discovererDescription
@@ -61,5 +60,4 @@ class NavigatedBeetlesInfo: UIViewController {
         fetchingImage(imageView: imageView, beetleImage: image)
         
     }
-    
 }

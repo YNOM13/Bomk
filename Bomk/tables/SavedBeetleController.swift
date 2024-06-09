@@ -96,6 +96,7 @@ extension SavedBeetleController: UITableViewDataSource{
     
     
 }
+
 extension SavedBeetleController: UITableViewDelegate {
     func updateFirestoreDocument(for beetle: Beetle) {
             let db = Firestore.firestore()
@@ -135,6 +136,7 @@ extension SavedBeetleController: UITableViewDelegate {
                
                return UISwipeActionsConfiguration(actions: [actionDeleteSavedBeetle])
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let arrayOfBeetles = sortedArrayOfBeetles[indexPath.row]
         

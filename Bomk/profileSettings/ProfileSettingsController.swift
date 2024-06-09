@@ -35,12 +35,12 @@ class ProfileSettingsController: UIViewController{
         guard let oldPassword = oldPasswordLabel.text,
               let newPassword = newPasswordLabel.text,
               let repeatPassword = repeatPasswordLabel.text else {
-            showAlert(message: "Please fill in all fields")
+            showAlert(message: "будь ласка заповніть всі форми")
             return
         }
         
         guard newPassword == repeatPassword else {
-            showAlert(message: "New password doesn't match repeated password")
+            showAlert(message: "Пароль не зівпадає.")
             return
         }
         

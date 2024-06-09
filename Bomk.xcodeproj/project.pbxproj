@@ -34,6 +34,7 @@
 		CE9AF5652B6065EC00F0D3E4 /* BeetlesCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AF5642B6065EC00F0D3E4 /* BeetlesCollectionController.swift */; };
 		CE9AF5672B6066A900F0D3E4 /* BeetleColletionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AF5662B6066A900F0D3E4 /* BeetleColletionCell.swift */; };
 		CE9AF5692B60685200F0D3E4 /* NavigatedBeetlesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9AF5682B60685200F0D3E4 /* NavigatedBeetlesInfo.swift */; };
+		CE9DE20F2BF37830001EC824 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9DE20E2BF37830001EC824 /* Colors.xcassets */; };
 		CE9FA6632B813B040023DBD0 /* SavedBeetleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */; };
 		CE9FA6652B813CA30023DBD0 /* BeetleTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */; };
 		CE9FA66A2B814AED0023DBD0 /* fetchingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */; };
@@ -94,6 +95,7 @@
 		CE9AF5642B6065EC00F0D3E4 /* BeetlesCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetlesCollectionController.swift; sourceTree = "<group>"; };
 		CE9AF5662B6066A900F0D3E4 /* BeetleColletionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetleColletionCell.swift; sourceTree = "<group>"; };
 		CE9AF5682B60685200F0D3E4 /* NavigatedBeetlesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatedBeetlesInfo.swift; sourceTree = "<group>"; };
+		CE9DE20E2BF37830001EC824 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CE9FA6622B813B040023DBD0 /* SavedBeetleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedBeetleController.swift; sourceTree = "<group>"; };
 		CE9FA6642B813CA30023DBD0 /* BeetleTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeetleTableVIewCell.swift; sourceTree = "<group>"; };
 		CE9FA6692B814AED0023DBD0 /* fetchingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchingImage.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				CE436EDB2B7EB24B0025D89E /* animations */,
 				CE436EDA2B7EB1100025D89E /* collections */,
 				CE436ED92B7EB0AF0025D89E /* images  */,
+				CE9DE20E2BF37830001EC824 /* Colors.xcassets */,
 				CECAE9F42B14BD260063DFD0 /* Assets.xcassets */,
 				CECAE9F92B14BD260063DFD0 /* Info.plist */,
 				CECAEA1B2B14BDB00063DFD0 /* GoogleService-Info.plist */,
@@ -506,6 +509,7 @@
 				CECAE9F82B14BD260063DFD0 /* LaunchScreen.storyboard in Resources */,
 				CE7E98262B850B2400A145BA /* swipe-example.json in Resources */,
 				CE41F1922B799F3100C10337 /* beetle-logo-black.png in Resources */,
+				CE9DE20F2BF37830001EC824 /* Colors.xcassets in Resources */,
 				CE41F1942B79A07400C10337 /* app-icon.png in Resources */,
 				CECAEA1C2B14BDB00063DFD0 /* GoogleService-Info.plist in Resources */,
 				CECAE9F52B14BD260063DFD0 /* Assets.xcassets in Resources */,

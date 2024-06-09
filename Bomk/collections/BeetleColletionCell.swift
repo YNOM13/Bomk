@@ -1,5 +1,4 @@
 import UIKit
-import Nuke
 import Kingfisher
 import Firebase
 import FirebaseFirestore
@@ -13,7 +12,8 @@ class BeetleColletionCell: UICollectionViewCell {
     
     @IBOutlet weak var imageBeetleView: UIImageView!
     @IBOutlet weak var beetleName: UILabel!
-    
+    @IBOutlet weak var savedButton: UIButton!
+  
     var beetle:Beetle?
     
     override func awakeFromNib() {
@@ -22,7 +22,6 @@ class BeetleColletionCell: UICollectionViewCell {
           layer.masksToBounds = true
       }
     
-    @IBOutlet weak var savedButton: UIButton!
     @IBAction func savedButtonTapped(_ sender: Any) {
         guard let beetle = self.beetle else {
             return
@@ -32,6 +31,7 @@ class BeetleColletionCell: UICollectionViewCell {
         updateFirestoreDocument(for: beetle)
         
     }
+    
     func configure(with beetle: Beetle?) {
         self.beetle = beetle
         beetleName.text = beetle?.name ?? "none"
@@ -41,6 +41,7 @@ class BeetleColletionCell: UICollectionViewCell {
         savedButton.setImage(saveButtonTitle, for: .normal)
         
     }
+    
     weak var delegate: BeetleCellDelegate?
 
     func updateFirestoreDocument(for beetle: Beetle) {
